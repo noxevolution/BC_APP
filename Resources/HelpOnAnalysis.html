@@ -1,0 +1,120 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+<HEAD>
+	<META HTTP-EQUIV="CONTENT-TYPE" CONTENT="text/html; charset=utf-8">
+	<TITLE>Help on Analysis</TITLE>
+	<META NAME="GENERATOR" CONTENT="OpenOffice.org 3.2  (Linux)">
+	<META NAME="CREATED" CONTENT="0;0">
+	<META NAME="CHANGEDBY" CONTENT="Andy ">
+	<META NAME="CHANGED" CONTENT="20111125;8183500">
+	<META NAME="CHANGEDBY" CONTENT="Andy ">
+	<META NAME="CHANGEDBY" CONTENT="Andy ">
+	<META NAME="CHANGEDBY" CONTENT="Andy ">
+	<META NAME="CHANGEDBY" CONTENT="Andy ">
+	<META NAME="CHANGEDBY" CONTENT="Andy ">
+	<STYLE TYPE="text/css">
+	<!--
+		@page { size: landscape; margin: 2cm }
+		P { margin-left: 1cm; margin-bottom: 0.21cm; color: #b3b3b3; line-height: 0.48cm }
+		P.western { font-family: "Arial", "Helvetica", sans-serif; font-size: 9pt; font-style: normal; font-weight: bold }
+		P.cjk { font-family: "Arial", "Helvetica", sans-serif; font-size: 9pt; font-style: normal; font-weight: normal }
+		P.ctl { font-family: "Arial", "Helvetica", sans-serif; font-size: 9pt; font-style: normal; font-weight: normal }
+		H1 { border: none; padding: 0cm; color: #000000; line-height: 0.53cm; text-align: left; page-break-before: always }
+		H1.western { font-family: "Arial", "Helvetica", sans-serif; font-size: 14pt; font-style: normal }
+		H1.cjk { font-family: "Arial", "Helvetica", sans-serif; font-size: 13pt; font-style: normal; font-weight: normal }
+		H1.ctl { font-family: "Arial", "Helvetica", sans-serif; font-size: 13pt; font-style: normal; font-weight: normal }
+		H3 { margin-left: 2cm; margin-top: 0.42cm; margin-bottom: 0cm; color: #ff950e }
+		H3.western { font-family: "DejaVu Sans Mono", monospace; font-size: 10pt }
+		H3.ctl { font-family: "Lohit Hindi" }
+		H3.heading-4-western { margin-left: 1cm; margin-top: 0.22cm; font-family: "DejaVu Sans Mono", monospace; font-size: 8pt; font-style: italic }
+		H3.heading-4-cjk { margin-left: 1cm; margin-top: 0.22cm; font-size: 11pt; font-style: italic }
+		H3.heading-4-ctl { margin-left: 1cm; margin-top: 0.22cm; font-family: "Lohit Hindi"; font-size: 11pt; font-style: italic }
+		A:link { color: #b95c12; text-decoration: none }
+		A:visited { color: #b95c12 }
+	-->
+	</STYLE>
+</HEAD>
+<BODY LANG="en-GB" TEXT="#666666" LINK="#b95c12" VLINK="#b95c12" BGCOLOR="#000000" DIR="LTR">
+<H1 CLASS="western"><FONT COLOR="#ff950e">Analysis Tools</FONT></H1>
+<P CLASS="western">The analytics tool allows you to study recorded
+timeseries as well as predicted their values.</P>
+<P CLASS="western">Use drag and drop to pull timeseries from the
+selection tree to either of the timeseries comboboxes. You can also
+drop timeseries into the rule-based text box.</P>
+<P CLASS="western">Several filters may be applied to the selected
+timeseries:</P>
+<H3 CLASS="heading-4-western" STYLE="margin-top: 0cm; margin-bottom: 0.5cm">
+original</H3>
+<P CLASS="western">This shows the original timeseries without
+modification.</P>
+<H3 CLASS="heading-4-western" STYLE="margin-top: 0cm; margin-bottom: 0.5cm">
+average</H3>
+<P CLASS="western">This shows a running average of the timeseries'
+value. You can specify the integration period to be used.</P>
+<H3 CLASS="heading-4-western" STYLE="margin-top: 0cm; margin-bottom: 0.5cm">
+trend</H3>
+<P CLASS="western">This fits a trend line to the timeseries. You can
+specify the order of fit. An order of 1 is a straight line.</P>
+<H3 CLASS="heading-4-western" STYLE="margin-top: 0cm; margin-bottom: 0.5cm">
+elasticity</H3>
+<P CLASS="western">This calculates elasticity, where elasticity is
+defined as:</P>
+<P CLASS="western" STYLE="margin-left: 7.5cm"><FONT FACE="Courier 10 Pitch">(change
+in quantity * average price) / (change in price * average quantity)</FONT></P>
+<P CLASS="western">You can calculate this over any number of samples.</P>
+<H3 CLASS="heading-4-western" STYLE="margin-top: 0cm; margin-bottom: 0.5cm">
+rule-based</H3>
+<P CLASS="western">Here you can specify the transformation you wish
+to apply. There are some special notations you can use here:</P>
+<UL>
+	<LI><P CLASS="western" STYLE="font-weight: normal"><FONT FACE="Courier 10 Pitch"><FONT SIZE=2 STYLE="font-size: 11pt"><I><B>i</B></I>
+	is the sample number. This runs from zero to the number of samples
+	-1</FONT></FONT></P>
+	<LI><P CLASS="western" STYLE="font-weight: normal"><FONT FACE="Courier 10 Pitch"><FONT SIZE=2 STYLE="font-size: 11pt"><I><B>original</B></I>
+	is the original timeseries</FONT></FONT></P>
+	<LI><P CLASS="western" STYLE="font-weight: normal"><FONT FACE="Courier 10 Pitch"><FONT SIZE=2 STYLE="font-size: 11pt"><I><B>samples</B></I>
+	is the number of timesteps in the timeseries, including future
+	timesteps</FONT></FONT></P>
+	<LI><P CLASS="western" STYLE="font-weight: normal"><FONT FACE="Courier 10 Pitch"><FONT SIZE=2 STYLE="font-size: 11pt"><I><B>seriesCount</B></I>
+	is the number of timeseries in the database</FONT></FONT></P>
+	<LI><P CLASS="western" STYLE="font-weight: normal"><FONT FACE="Courier 10 Pitch"><FONT SIZE=2 STYLE="font-size: 11pt">To
+	apply a lookup value use <I><B>[1, 2, 3, 4, 5, 6, 7, 8][i]</B></I></FONT></FONT></P>
+	<LI><P CLASS="western"><FONT FACE="Courier 10 Pitch"><FONT SIZE=2 STYLE="font-size: 11pt"><SPAN STYLE="font-style: normal"><SPAN STYLE="font-weight: normal">Use</SPAN></SPAN>
+	<I><B>if</B></I><SPAN STYLE="font-style: normal"><SPAN STYLE="font-weight: normal">:</SPAN></SPAN>
+	<SPAN STYLE="font-style: normal"><SPAN STYLE="font-weight: normal">e.g.
+	</SPAN></SPAN><I><B>0 if i &lt; 10 else 1</B></I></FONT></FONT></P>
+	<LI><P CLASS="western"><FONT FACE="Courier 10 Pitch"><FONT SIZE=2 STYLE="font-size: 11pt"><I><B>Use
+	max () and min ()</B></I></FONT></FONT></P>
+	<LI><P CLASS="western" STYLE="font-style: normal; font-weight: normal">
+	<FONT FACE="Courier 10 Pitch"><FONT SIZE=2 STYLE="font-size: 11pt">Use
+	<I><B>fft (series, </B></I><I><B>upperFrequency, lowerFrequency</B></I><I><B>)</B></I>
+	to filter out frequency components of the timeseries, where <I><B>f</B></I>
+	is the harmonic and the base period is the total length of the
+	timeseries. The <I><B>lowerFrequency</B></I> argument is optional
+	and defaults to zero. For example, <I><B>fft({!}, 5)[i]</B></I>
+	returns the referenced timeseries with frequency components greater
+	than or equal to 5 * base period removed. f<I><B>ft({!}, 5, </B></I><I><B>5</B></I><I><B>)[i]</B></I>
+	returns just the fifth harmonic component. You can use this function
+	to ascertain the periodicity components within a timeseries. It's
+	hard to explain succinctly, best try it.</FONT></FONT></P>
+	<LI><P CLASS="western" STYLE="font-weight: normal"><FONT FACE="Courier 10 Pitch"><FONT SIZE=2 STYLE="font-size: 11pt">The
+	evaluator differentiates between integer and real arithmetic</FONT></FONT></P>
+	<LI><P CLASS="western" STYLE="font-weight: normal"><FONT FACE="Courier 10 Pitch"><FONT SIZE=2 STYLE="font-size: 11pt">Reference
+	timeseries by putting their full names inside curly brackets. If you
+	drag a timeseries to the text box you will see the correct syntax.
+	Preceding the name with an asterisk yields the series value at any
+	timepoint. If you omit the leading asterisk you'll have to add <I><B>[i]</B></I>
+	at the end of the reference timeseries. This latter form gives you
+	the opportunity to alter the index value, e.g. replace <I><B>i</B></I>
+	with <I><B>i+1</B></I>.<BR><BR>e.g. {*My timeseries} or
+	{MyTimeseries} [i-1]</FONT></FONT></P>
+	<LI><P CLASS="western" STYLE="font-weight: normal"><FONT FACE="Courier 10 Pitch"><FONT SIZE=2 STYLE="font-size: 11pt"><I><B>{!}</B></I>
+	refers to the timeseries selected in the main combobox and <I><B>{!*}</B></I>
+	refers to its elements as described above. <I><B>{!}[i]</B></I> is
+	equivalent to <I><B>{!*}</B></I>.</FONT></FONT></P>
+</UL>
+<P CLASS="western"><SPAN STYLE="font-weight: normal">You can access
+any of the following modules from within th</SPAN>e rule-based text
+box: math, random.</P>
+</BODY>
+</HTML>

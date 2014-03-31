@@ -1,0 +1,24 @@
+<RCC>
+    <qresource prefix="/images">
+        <file>Resources/play.png</file>
+        <file>Resources/pause.png</file>
+        <file>Resources/add32x32.png</file>
+        <file>Resources/endstop.png</file>
+        <file>Resources/back.png</file>
+        <file>Resources/forward.png</file>
+        <file>Resources/nestleP.png</file>
+        <file>Resources/toyotaP.png</file>
+        <file>Resources/undoIcon.png</file>
+        <file>Resources/redoIcon.png</file>
+        <file>Resources/goIcon.png</file>
+        <file>Resources/clock.png</file>
+        <file>Resources/ForcastexampleLeft.png</file>
+        <file>Resources/ForcastexampleRight.png</file>
+        <file>Resources/remove32x32.png</file>
+        <file>Resources/remove20x20.png</file>
+        <file>Resources/zero20x20.png</file>
+    </qresource>
+    <qresource prefix="/config">
+        <file>Resources/stylesheet.qss</file>
+    </qresource>
+</RCC>

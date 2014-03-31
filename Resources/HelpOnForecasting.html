@@ -1,0 +1,146 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+<HEAD>
+	<META HTTP-EQUIV="CONTENT-TYPE" CONTENT="text/html; charset=utf-8">
+	<TITLE>Help on Analysis</TITLE>
+	<META NAME="GENERATOR" CONTENT="OpenOffice.org 3.2  (Linux)">
+	<META NAME="CREATED" CONTENT="0;0">
+	<META NAME="CHANGEDBY" CONTENT="Andy ">
+	<META NAME="CHANGED" CONTENT="20120521;4122500">
+	<META NAME="CHANGEDBY" CONTENT="Andy ">
+	<META NAME="CHANGEDBY" CONTENT="Andy ">
+	<META NAME="CHANGEDBY" CONTENT="Andy ">
+	<META NAME="CHANGEDBY" CONTENT="Andy ">
+	<META NAME="CHANGEDBY" CONTENT="Andy ">
+	<META NAME="CHANGEDBY" CONTENT="Andy ">
+	<STYLE TYPE="text/css">
+	<!--
+		@page { size: landscape; margin: 2cm }
+		P { margin-left: 1cm; margin-bottom: 0.21cm; color: #b3b3b3; line-height: 0.48cm }
+		P.western { font-family: "Arial", "Helvetica", sans-serif; font-size: 9pt; font-style: normal; font-weight: bold }
+		P.cjk { font-family: "Arial", "Helvetica", sans-serif; font-size: 9pt; font-style: normal; font-weight: normal }
+		P.ctl { font-family: "Arial", "Helvetica", sans-serif; font-size: 9pt; font-style: normal; font-weight: normal }
+		H1 { border: none; padding: 0cm; color: #000000; line-height: 0.53cm; text-align: left; page-break-before: always }
+		H1.western { font-family: "Arial", "Helvetica", sans-serif; font-size: 14pt; font-style: normal }
+		H1.cjk { font-family: "Arial", "Helvetica", sans-serif; font-size: 13pt; font-style: normal; font-weight: normal }
+		H1.ctl { font-family: "Arial", "Helvetica", sans-serif; font-size: 13pt; font-style: normal; font-weight: normal }
+		H3 { margin-left: 2cm; margin-top: 0.42cm; margin-bottom: 0cm; color: #ff950e }
+		H3.western { font-family: "DejaVu Sans Mono", monospace; font-size: 10pt }
+		H3.ctl { font-family: "Lohit Hindi" }
+		A:link { color: #b95c12; text-decoration: none }
+		A:visited { color: #b95c12 }
+	-->
+	</STYLE>
+</HEAD>
+<BODY LANG="en-GB" TEXT="#666666" LINK="#b95c12" VLINK="#b95c12" BGCOLOR="#000000" DIR="LTR">
+<H1 CLASS="western"><FONT COLOR="#ff950e">Forecasting</FONT></H1>
+<P CLASS="western">The forecasting pane allows you to forecast future
+values of a timeseries by entering future values of timeseries upon
+which it depends.</P>
+<P CLASS="western">For example, if sales are related to advertising
+expenditure, entering larger values for future expenditure should
+cause future values of the sales timeseries to increase.</P>
+<H3 CLASS="western" STYLE="margin-left: 0.98cm">Display</H3>
+<P CLASS="western">The display is divided into three sections. Graphs
+in the top section (target timeseries) represent the timeseries that
+we are going to forecast. The background of these graphs is coloured
+pink. Below this is the x-axis which shows values of time for all
+graphs. Blow this is a collection of timeseries (source timeseries)
+whose future values can be provided to see the effect on the top
+graphs.</P>
+<P CLASS="western">Future values, i.e. values of timeseries beyond
+the end of data available in the application are shown in the lower
+graphs as small red squares on a red curve. You can grab each of
+these points and move them to new positions. Alternatively,
+double-clicking on them allows you to enter their new values from the
+keyboard.</P>
+<P CLASS="western">If there is any dependency between the source
+graphs and the target graphs, the effect of these changes should be
+seen immediately in the target graphs at the top of the pane.</P>
+<H3 CLASS="western" STYLE="margin-left: 1.03cm">Showing Target
+Timeseries</H3>
+<P CLASS="western" STYLE="margin-left: 1.03cm">You can display one or
+more target graphs in this pane. To add a new target graph, click on
+the 'Add Target Graph' button in the Layout Controls toolbox. If you
+can't see this toolbox, click on Menu-&gt;View-&gt;Layout Controls to
+display it. When you display a new target timeseries graph it shows
+the first timeseries in the timeseries set that is not already
+displayed in this pane, either as a source or a target graph.</P>
+<H3 CLASS="western" STYLE="margin-left: 1.05cm">Showing Source
+Timeseries</H3>
+<P CLASS="western" STYLE="margin-left: 1.05cm">You can display any
+number of source graphs in this pane. To add a new source graph,
+click on the 'Add Source Graph' button in the Layout Controls
+toolbox. If you can't see this toolbox, click on Menu-&gt;View-&gt;Layout
+Controls to display it. When you display a new source timeseries
+graph it shows the first timeseries in the timeseries set that is not
+already displayed in this pane, either as a source or a target graph.</P>
+<H3 CLASS="western" STYLE="margin-left: 1.01cm">Selecting Timeseries</H3>
+<P CLASS="western" STYLE="margin-left: 1.03cm">You can alter which
+timeseries a graph displays either by clicking the popup menu above
+the graph or by dragging a node to that menu from the selection tree
+(Menu-&gt;View-&gt;Selection Tree)</P>
+<H3 CLASS="western" STYLE="margin-left: 1.05cm">Removing Graphs</H3>
+<P CLASS="western" STYLE="margin-left: 1.03cm">To remove a graph,
+press the small button with a red cross on it at the top right-hand
+corner of the graph. You may display a minimum of one target
+timeseries.</P>
+<H3 CLASS="western" STYLE="margin-left: 1.01cm">Panning and Zooming</H3>
+<P CLASS="western" STYLE="margin-left: 1.03cm">Clicking on the
+background of any of the graphs and sliding the mouse right or left
+whilst holding down the mouse button allows you to move the display
+of all graphs to the right or to the left, so as to show either more
+historic or more future values of all timeseries.</P>
+<P CLASS="western" STYLE="margin-left: 1.03cm">Use your mouse wheel
+to zoom.</P>
+<H3 CLASS="western" STYLE="margin-left: 0.98cm">Displaying Timeseries
+Values</H3>
+<P CLASS="western" STYLE="margin-left: 0.98cm">Hovering over a point
+on any of the graphs causes the value of that point to be displayed
+textually in the form of a tooltip.</P>
+<H3 CLASS="western" STYLE="margin-left: 1.01cm">Changing Future
+Values of Source Timeseries</H3>
+<P CLASS="western" STYLE="margin-left: 1.01cm">Values in the 'future'
+of all source graphs are displayed with a red curve and the future
+points are depicted by small red squares. Each of these future points
+can be dragged to a new position using the mouse. Alternatively,
+double-clicking on a point allows you to enter the value of that
+point from the keyboard.</P>
+<H3 CLASS="western" STYLE="margin-left: 1.01cm">Changing the Number
+of Future Periods Displayed</H3>
+<P CLASS="western" STYLE="margin-left: 1.01cm">By using the spin box
+in the Layout Controls toolbox ( Menu-&gt;View-&gt;Layout Controls)
+you can choose how many 'future' values to display. You can display
+any number of 'future values', though forecast values more than a few
+time periods into the future may be of little practical use. 'Future'
+is defined as those periods more to the future than the data in this
+particular database. A timeseries does not necessarily run to the end
+of the database and it may stop short. For example, if a
+monthly-sampled database runs from January to December and the
+timeseries we are studying only has values until September, then we
+have the opportunity to predict its values from October and beyond.
+In this case, setting the value of 'Future Periods' to zero (i.e.
+nothing beyond December) will still show forecast values for this
+timeseries up until the end of the year. If this is not required, the
+Future Periods spinbox can take on negative values.</P>
+<H3 CLASS="western" STYLE="margin-left: 0.98cm">Automatic Selection
+of Source Graphs</H3>
+<P CLASS="western" STYLE="margin-left: 0.98cm">When you add a new
+target timeseries, or when you change the timeseries that a target
+graph displays, the application selects a number of source timeseries
+for you and displays them in this pane. It will select a maximum of
+'Influences to add' timeseries (you can alter this value in the
+Layout Controls Toolbox, Menu-&gt;View-&gt;Layout Controls). If any
+of these timeseries is not currently displayed either as a target or
+a source graph, its display is added to the pane as a source
+timeseries. The timeseries selected for inclusion in this way are
+those with the greatest coefficient of influence over the target
+timeseries.</P>
+<H3 CLASS="western" STYLE="margin-left: 0.98cm">Zeroing Source Graphs</H3>
+<P CLASS="western" STYLE="margin-left: 0.98cm">Pressing the small
+button with a zero on it, next to the delete button for each graph,
+causes user-entered future values of this timeseries to be reset to
+their initial values. Initial future values of a timeseries are
+simply the most-recent recorded value of that timeseries.</P>
+</BODY>
+</HTML>

@@ -1,0 +1,29 @@
+library(randomForest)
+
+# Get the command line arguments. Currently these are 1) the name of the .csv file and 2) the number of future periods (positive integer)
+args = commandArgs();
+i = 1
+while (args [i] != "--args") i = i + 1
+csvFile = args [i + 1]
+numberOfFuturePeriods = args [i + 2]
+
+
+# OLD VERSION
+#set.seed(111)
+#sales = read.csv(file=csvFile,head=TRUE,sep=",")
+#ind <- sample(2, nrow(sales), replace = TRUE, prob=c(0.8, 0.2))
+#sales.rf <- randomForest(TARGET ~ ., data=sales[ind == 1,])
+#sales.pred <- predict(sales.rf, sales[ind == 2,])
+#sales.pred[1]
+
+# NEW VERSION
+set.seed(111)
+DataF = read.csv(file=csvFile,head=TRUE,sep=",")
+trainData = DataF[1:(nrow(DataF)-1),]
+trainData.rf <- randomForest(TARGET ~ ., data=trainData[1:nrow(trainData),])
+trainData.pred <- predict(trainData.rf, DataF[nrow(DataF),])
+trainData.pred
+
+# Output the command line arguments to the R output file. Just for verification/debugging
+cat ("csv Filename:", csvFile, "\n", sep ="")
+cat ("Number of future periods:", numberOfFuturePeriods, "\n", sep ="")

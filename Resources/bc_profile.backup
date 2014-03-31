@@ -1,0 +1,48 @@
+#################################################################################################################################################################
+#                                                                                                                                                               #
+# Brand Communities User Attributes                                                                                                                             #
+#                                                                                                                                                               #
+#################################################################################################################################################################
+
+# Colour choices available to XY Plot Associations
+self.colorPicker                 = [QColor ('red'), QColor ('green'), QColor ('orange'), QColor ('indigo'), QColor ('yellow'), QColor ('blue'), QColor ('violet')]
+
+# Universe
+self.moveTime                    = 500                    # The node animation time in milliseconds. This is the time it takes for a node to move to a new position 
+self.baseCutoff                  = 0                      # master link cutoff (range is from 0 to 1)
+
+# Node and edge appearances
+self.nodeTextColor               = QColor (180, 180, 180) # Normal color of node text
+self.nodeTextHighlightColor      = QColor (255, 255, 0)   #  - when highlighted
+self.nodeOutlineColor            = QColor ('black')       # The border color of a node
+self.backwashColor               = QColor (0, 0, 0, 60)   # Normal colour of node label backwash
+self.backwashHighlightColor      = QColor (0, 0, 0, 160)  #  - when node highlighted
+self.nodeFontSize                = 8                      # Normal size of node text
+self.nodeHighlightFontSize       = 9                      #  - when node highlighted
+self.centerNodeHighlightColor    = QColor ('magenta')     # The central node is highlighted in this color when the mouse passes over it.
+self.linkPositiveColor           = QColor ('green')       # Colour of attractive link
+self.linkPositiveHighlightColor  = QColor (127, 255, 127) #  - when highlighted
+self.linkNegativeColor           = QColor ('red')         # Colour of repulsive link
+self.linkNegativeHighlightColor  = QColor (255, 0, 127)   #  - when highlighted
+self.xyBubbleEdgeColor           = QColor ('black')       # The colour of the bubble borders in the XY Graph
+self.xyGridColor                 = QColor (127, 127, 127) # The colour of the XY Graph's gridlines
+self.xyWatermarkColor            = QColor (192, 192, 192) # The colour of the time point display in the XY Graph background
+self.xyDisplayBackgroundTint     = QColor ('white')       # The colour of the XY Graph background when displaying XY data
+self.xyTimeDisplayBackgroundTint = QColor (255, 230, 230) #  - and when displaying against time
+
+# Graph appearance
+self.busyIndicatorBrush          = QColor ('green')       # The colour of the 'busy' indicator
+self.busyIndicatorPen            = QColor ('red')         #  - the colour of its border
+self.eventBarColor               = QColor ('turquoise')   # The colour of the event bars in the XY Plot
+self.opaqueDiskBorderColor       = QColor (100, 100, 100) # The colour of the opaque disk's border
+self.galaxyBlueCircleColor       = QColor ('blue')        # The colour of the two blue circles in the Galaxy plot
+
+# Database
+self.databasePath                = '/home/andy/Desktop/Dropbox/BC Data for dropbox/TestDatabases/V4.000'
+self.databaseName                = '' #'astro-4x12.db'
+
+# Rick's debug settings
+self.debugDb                     = False
+self.debugGr                     = False
+self.debugTs                     = False
+self.debugUi                     = False
